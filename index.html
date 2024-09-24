@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Ball Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <h1>Welcome to the Blue Ball Game</h1>
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-container" style="display:none;">
+        <h2>Guess the Correct Ball!</h2>
+        <p>You have <span id="attempts-left">6</span> attempts left.</p>
+        <div id="grid-container"></div>
+        <p id="game-message"></p>
+        <button id="restart-btn" style="display:none;">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

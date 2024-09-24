@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+    background-image: url('blueball.webp');
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+
+h1 {
+    color: white;
+}
+
+h2, p, #attempts-left {
+    color: white;
+}
+
+
+#start-screen, #game-container {
+    text-align: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ball.yellow {
+    background-color: yellow;
+}
+
+.ball.red {
+    background-color: red;
+}
+
+.ball.green {
+    background-color: green;
+}
+
+#game-message {
+    font-size: 18px;
+    margin-top: 20px;
+}
